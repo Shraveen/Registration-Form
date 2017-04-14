@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link href="materialize.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Chewy|Merienda+One" rel="stylesheet">
+        <style type="text/css">
+        body
+        {
+            background-image: url(bg.jpg);
+            color:black;
+            font-family: 'Chewy', cursive;
+        }
+        #head
+        {
+             font-family: 'Gloria Hallelujah', cursive; 
+        }
+        </style>
+    </head>
+    <body>
+        <div class="col m6 s12 push-m6">
+            <div class="container">
+                <center><h4 id="head">Tell us a little about you....</h4></center>
+            <div class="container">
+            <form action="untitled5.html">
+        <p>What's your Name:<input type="text"></p>
+        <p>How old are you:<input type="number"></p>
+                <p>Sex:</p>
+                <div class="container">
+                    <p>
+                        <input class="with-gap" name="group3" type="radio" id="male" checked/>
+                        <label for="male">Male</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="group3" type="radio" id="female" checked/>
+                        <label for="female">Female</label>
+                    </p> 
+                </div>
+                
+        <p>Date of Birth: <input type="date" class="datepicker"></p>
+        <p>Enter your E-Mail ID: <input type="email"></p>
+        <p>College Name:<input type="text"></p>
+        <p>Nationality:<input type="text"></p>
+        <p>Mother Tongue:<input type="text"></p>
+        <p>Which is your birth place:<input type="text"></p>
+        <br>
+        
+        <center>
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+            <i class="material-icons">Submit</i>
+            </button>
+        </center>
+        </form>
+        </div>
+            </div>
+        </div>
+        <script src="jquery.js"></script>
+        <script src="materialize.min.js"></script>
+        <script>
+            $(function(){
+                $ ('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
+            });
+        </script>
+    </body>
+</html>
